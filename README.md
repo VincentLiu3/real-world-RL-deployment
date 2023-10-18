@@ -13,7 +13,7 @@ The repository aggregates information from several sources, including
 We categorize RL production based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown)
 and the approaches to solve the problems (e.g., online, offline, build a simulator then planning, build a simulator then search, offline data with partial simulator).
 
-### Industrial Control/Energy Optimization
+### Industrial Control
 
 **AMII** applies RL for water treatment plant.  
 Link: [Blog Post](https://www.amii.ca/latest-from-amii/isl-adapt-uses-ml-make-water-treatment-cleaner-greener/)  
@@ -33,14 +33,14 @@ Approach: Build a simulator then planning
 
 **Foobot** uses deep RL for HVAC optimization.   
 Link: [Blog](https://techblog.foobot.io/)  
-Deployment status: Deployed at least once/for some time (based on the information [here](https://github.com/montrealrobotics/DeepRLInTheWorld))  
+Deployment status: currently deployed (based on the information [here](https://github.com/montrealrobotics/DeepRLInTheWorld))  
 Approach: Build a simulator then planning  
 Difficulty: High dimensional action spaces  
 Algorithm: PPO with autoregressive policies
 
 **NVIDIA** uses RL for data center congestion control.   
 Link: [Paper](https://arxiv.org/pdf/2207.02295.pdf)  
-Deployment status: Unknown. Experiments were done in real world system.   
+Deployment status: Experiments were done in real world system.   
 Approach: Build a simulator then planning   
 Difficulty: Constraints on low memory and low inference time, multi-agent POMDP  
 Algorithm: Policy gradient with LSTM layers -> distill to lightweight decision trees
@@ -50,8 +50,28 @@ Link: [Video](https://www.anyscale.com/events/2022/03/29/reinforcement-learning-
 Deployment status: ?  
 
 **Phaidra** uses deep RL to improve plant stability and energy efficiency.  
-Link: [Website](https://www.phaidra.ai/)  
+Link: [Website](https://www.phaidra.ai/), [Technical Report](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42542.pdf)   
 Deployment status: unknown  
+
+**Microsoft Project Bonsai** uses RL for industrial control systems  
+Link: [Website](https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai?activetab=pivot:primaryr7), [Report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Gk6P)  
+Deployment status: unknown  
+Approach: Build a simulator then planning   
+
+### Energy Control
+**Deepmind** successfully controlling the nuclear fusion plasma in a tokamak with deep reinforcement learning.  
+Link: [Paper](https://www.nature.com/articles/s41586-021-04301-9), [Post](https://www.deepmind.com/blog/accelerating-fusion-science-through-learned-plasma-control)  
+Deployment status: Real-world experiments on TCV (an experimental tokamak)  
+Approach: Build a simulator then planning   
+Algorithm: MPO (four-layer neural network for the actor, larger RNNs for the critic)
+
+**DeepThermal** uses model-based offline RL to optimize the combustion efficiency of a thermal power generating unit.  
+Link: [Paper](https://arxiv.org/pdf/2102.11492.pdf)  
+Deployment status: currently deployed (deployed in four large coal-fired thermal power plants in China)  
+Approach: Offline  
+Algorithm: offline model learning using LSTM + offline actor-critic with reward penalty
+
+[comment]: <> (Wave Energy Converters)
 
 [comment]: <> (**StackEase** applies deep RL algorithms to optimize Battery Energy Storage Systems &#40;BESS&#41;.  )
 
@@ -59,20 +79,13 @@ Deployment status: unknown
 
 [comment]: <> (Deployment status: unknown  )
 
-### Control 
-Nuclear fusion control: google deepmind (Unknown deployment status)
+### Other Control Applications
+Stratospheric balloons  
+Link: [Paper](https://www.nature.com/articles/s41586-020-2939-8)
 
-Thermal Power Generating
-https://arxiv.org/abs/2102.11492
+Drone  
+Link: [Paper](https://www.nature.com/articles/s41586-023-06419-4)
 
-Wave Energy Converters
-
-Balloons 
-
-### Recommendation
-Yahoo (online bandits)
-
-### Finance
 
 ### Autonomous vehicle
 Nuro? 
@@ -85,15 +98,18 @@ Approach: Online
 Difficulty: Learning a reward model  
 Algorithm: PPO with learned reward model 
 
-### Education 
+### Recommendation
+Yahoo (online bandits)
 
-### Healthcare
-Machine Learning for Mechanical Ventilation Control
-https://arxiv.org/pdf/2111.10434.pdf
+Azure AI Personalizer
 
 ### Operation Research
 Amazon inventory control  
 Google Maps 
+
+### Finance/Accounting
+IRS uses bandits for audit selection  
+Link: [Paper](https://realworldml.github.io/files/cr/paper68.pdf) 
 
 ### Chip Design
 
@@ -102,11 +118,19 @@ Compiler Optimization
 Memory mapping  
 
 ### Drug Discovery
-Difficulty: Reward is expensive 
+
+[comment]: <> (Difficulty: Reward is expensive )
+
+### Education 
+
+### Healthcare
+Machine Learning for Mechanical Ventilation Control
+https://arxiv.org/pdf/2111.10434.pdf
 
 ### Algorithm 
 Matrix multiplication
 
+Video compression
 
 ### Open Source Software
 [ReAgent: Applied Reinforcement Learning @ Facebook](https://github.com/facebookresearch/ReAgent)  
