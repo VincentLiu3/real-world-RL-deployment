@@ -21,7 +21,7 @@ Deployment status: Planned to be deployed
 Approach: Build a simulator 
 
 **Google Deepmind** uses RL to improve the energy efficiency of heating, ventilation and air conditioning (HVAC) control.  
-Link: [Luo2022](https://arxiv.org/abs/2211.07357), [Lazic2018](https://proceedings.neurips.cc/paper_files/paper/2018/file/059fdcd96baeb75112f09fa1dcc740cc-Paper.pdf)   
+Link: [Paper2022](https://arxiv.org/abs/2211.07357), [NeurIPS2018](https://proceedings.neurips.cc/paper_files/paper/2018/file/059fdcd96baeb75112f09fa1dcc740cc-Paper.pdf)   
 Deployment status: Deployed at least once/for some time. Experiments were done in real world facilities.    
 Approach: Online  
 Algorithm: Policy iteration, with value function estimated from offline data
@@ -33,13 +33,13 @@ Approach: Build a simulator then planning
 
 **Foobot** uses deep RL for HVAC optimization.   
 Link: [Blog](https://techblog.foobot.io/)  
-Deployment status: currently deployed (based on the information [here](https://github.com/montrealrobotics/DeepRLInTheWorld))  
+Deployment status: Currently deployed (based on the information [here](https://github.com/montrealrobotics/DeepRLInTheWorld))  
 Approach: Build a simulator then planning  
 Difficulty: High dimensional action spaces  
 Algorithm: PPO with autoregressive policies
 
 **NVIDIA** uses RL for data center congestion control.   
-Link: [Paper](https://arxiv.org/pdf/2207.02295.pdf)  
+Link: [Paper2023](https://arxiv.org/pdf/2207.02295.pdf)  
 Deployment status: Experiments were done in real world system.   
 Approach: Build a simulator then planning   
 Difficulty: Constraints on low memory and low inference time, multi-agent POMDP  
@@ -47,7 +47,7 @@ Algorithm: Policy gradient with LSTM layers -> distill to lightweight decision t
 
 **Siemens Technology** has been working on industrial applications of RL.   
 Link: [Video](https://www.anyscale.com/events/2022/03/29/reinforcement-learning-in-the-physical-world)  
-Deployment status: ?  
+Deployment status: unknown
 
 **Phaidra** uses deep RL to improve plant stability and energy efficiency.  
 Link: [Website](https://www.phaidra.ai/), [Technical Report](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42542.pdf)   
@@ -60,14 +60,14 @@ Approach: Build a simulator then planning
 
 ### Energy Control
 **Deepmind** successfully controlling the nuclear fusion plasma in a tokamak with deep reinforcement learning.  
-Link: [Paper](https://www.nature.com/articles/s41586-021-04301-9), [Post](https://www.deepmind.com/blog/accelerating-fusion-science-through-learned-plasma-control)  
+Link: [Nature2022](https://www.nature.com/articles/s41586-021-04301-9), [Post](https://www.deepmind.com/blog/accelerating-fusion-science-through-learned-plasma-control)  
 Deployment status: Real-world experiments on TCV (an experimental tokamak)  
 Approach: Build a simulator then planning   
 Algorithm: MPO (four-layer neural network for the actor, larger RNNs for the critic)
 
 **DeepThermal** uses model-based offline RL to optimize the combustion efficiency of a thermal power generating unit.  
-Link: [Paper](https://arxiv.org/pdf/2102.11492.pdf)  
-Deployment status: currently deployed (deployed in four large coal-fired thermal power plants in China)  
+Link: [AAAI2022](https://arxiv.org/pdf/2102.11492.pdf)  
+Deployment status: Currently deployed (deployed in four large coal-fired thermal power plants in China)  
 Approach: Offline  
 Algorithm: offline model learning using LSTM + offline actor-critic with reward penalty
 
@@ -79,16 +79,22 @@ Algorithm: offline model learning using LSTM + offline actor-critic with reward 
 
 [comment]: <> (Deployment status: unknown  )
 
-### Other Control Applications
-Stratospheric balloons  
-Link: [Paper](https://www.nature.com/articles/s41586-020-2939-8)
+### Control of Physical Systems
+**Google** uses RL to control a superpressure balloon in the stratosphere.  
+Link: [Nature2020](https://www.nature.com/articles/s41586-020-2939-8)  
+Deployment status: Currently deployed  
+Approach: Build a simulator then planning    
+Difficulty: Partial observability  
+Algorithm: Incorporate uncertainty estimates as additional inputs, QR-DQN with a seven-layers Relu network + parallel simulation
 
-Drone  
-Link: [Paper](https://www.nature.com/articles/s41586-023-06419-4)
+**Swift** achieved champion-level performance in drone racing.  
+Link: [Nature2023](https://www.nature.com/articles/s41586-023-06419-4)  
+Deployment status: Deployed at least once/for some time (won several races against human champions)  
+Approach: Build a simulator then planning + fine-tune based on real-world data  
+Difficulty: Optimizing a policy purely in simulation yields poor performance on physical hardware  
+Algorithm: PPO + parallel simulation
 
-
-### Autonomous vehicle
-Nuro? 
+[comment]: <> (Nuro)
 
 ### LLM
 **OpenAI** uses Reinforcement Learning from Human Feedback (RLHF).   
