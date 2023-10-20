@@ -1,17 +1,16 @@
 # Real World RL in Deployment
 
-The repository compiles real-world applications of reinforcement learning.
+The repository compiles a list of real-world applications of reinforcement learning.
 - Only include methods that was deployed, is currently deployed, or will be deployed in the future. 
 - Exclude RL applications to games and robotics where experiments were only done in simulation. 
 - Only include publicly available information. 
 
 The repository aggregates information from several sources, including
-- [DeepRLInTheWorld](https://github.com/montrealrobotics/DeepRLInTheWorld)
+- [Deep RL In The World](https://github.com/montrealrobotics/DeepRLInTheWorld)
 - [RL for real-world problems](https://mighty-melody-f4b.notion.site/RL-for-real-world-problems-0114c270e5d94894b3c4f227e24401db)
 - [Application of RL 2023](https://docs.google.com/presentation/d/1bJssDePYLuVHSHoBAPYaiIjXcLFB0hOsuR1-PXtEb-o/edit#slide=id.g1d05b5b4042_462_15)
 
-We categorize RL applications based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown)
-and the approaches to solve the problems (e.g., online, offline, train with simulators, search with simulators, offline data with simulators).
+We categorize RL applications based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown), and the approaches to solve the problems (e.g., online, offline, train with simulators, search with simulators, offline data with simulators).
 
 ## Contents
 
@@ -23,7 +22,7 @@ and the approaches to solve the problems (e.g., online, offline, train with simu
 - [Open Source Software](#open-source-software)
 - [Other Resources](#other-resources)
 
-### Industrial Control
+## Industrial Control
 
 **AMII** applies RL for water treatment plant.  
 Link: [Blog Post](https://www.amii.ca/latest-from-amii/isl-adapt-uses-ml-make-water-treatment-cleaner-greener/)  
@@ -67,7 +66,7 @@ Link: [Website](https://www.microsoft.com/en-us/ai/autonomous-systems-project-bo
 Deployment status: unknown  
 Approach: Train with simulators
 
-### Energy Control
+## Energy Control
 **Deepmind** successfully controlling the nuclear fusion plasma in a tokamak with deep reinforcement learning.  
 Link: [Nature2022](https://www.nature.com/articles/s41586-021-04301-9), [Post](https://www.deepmind.com/blog/accelerating-fusion-science-through-learned-plasma-control)  
 Deployment status: Real-world experiments on TCV (an experimental tokamak)  
@@ -84,7 +83,7 @@ Algorithm: offline model learning using LSTM + offline actor-critic with reward 
 [comment]: <> (Link: [Website]&#40;https://eolrobotics.fr/&#41;  )
 [comment]: <> (Deployment status: unknown  )
 
-### Control of Physical Systems
+## Control of Physical Systems
 **Google** uses RL to control a superpressure balloon in the stratosphere.  
 Link: [Nature2020](https://www.nature.com/articles/s41586-020-2939-8)  
 Deployment status: Currently deployed  
@@ -101,19 +100,19 @@ Algorithm: PPO + parallel simulation
 
 [comment]: <> (Nuro)
 
-### LLM
+## LLM
 **OpenAI** uses Reinforcement Learning from Human Feedback (RLHF).   
 Link: [Introducing ChatGPT](https://openai.com/blog/chatgpt)   
 Deployment status: Currently deployed
 Difficulty: Learning a reward model  
 Algorithm: PPO with learned reward model 
 
-### Recommendation
+## Recommendation
 Yahoo (online bandits)
 
 Azure AI Personalizer
 
-### Operation Research
+## Operation Research
 Amazon inventory control  
 Link: [Paper](https://arxiv.org/abs/2210.03137)
 
@@ -121,36 +120,36 @@ Google Maps
 
 Ridesharing 
 
-### Finance/Accounting
+## Finance/Accounting
 IRS uses bandits for audit selection  
 Link: [Paper](https://realworldml.github.io/files/cr/paper68.pdf) 
 
-### Chip Design
+## Chip Design
 
-### Compiler Optimization
+## Compiler Optimization
 Compiler Optimization  
 Memory mapping  
 
-### Drug Discovery
+## Drug Discovery
 
 [comment]: <> (Difficulty: Reward is expensive )
 
-### Education 
+## Education 
 
-### Healthcare
+## Healthcare
 Machine Learning for Mechanical Ventilation Control
 https://arxiv.org/pdf/2111.10434.pdf
 
-### Sport 
+## Sport 
 The Emirates Team New Zealand won the America’s Cup with the help of an RL agent.  
 Link: [Presentation](https://www.anyscale.com/blog/sailing-to-victory-with-reinforcement-learning)
 
-### Algorithm 
+## Algorithm 
 Matrix multiplication
 
 Video compression
 
-### Other Applications without Deployment
+## Other Applications without Deployment
 Apple uses RL to learn a network defense policy  
 Link: [Paper](https://drive.google.com/file/d/1frDQBb3dlc12BbCzJRJ_H6swVdhAjWGT/view)
 
@@ -159,12 +158,12 @@ Hewlett Packard Enterprise uses RL to control Wave Energy Converters
 Boeing uses RL to optimize the obstacle avoidance policy.  
 Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/view)
 
-### Open Source Software
+## Open Source Software
 [ReAgent: Applied Reinforcement Learning @ Facebook](https://github.com/facebookresearch/ReAgent)  
 [RLlib: Industry-Grade Reinforcement Learning](https://docs.ray.io/en/master/rllib/index.html)  
 [FinRL: Financial Reinforcement Learning](https://github.com/AI4Finance-Foundation/FinRL)
 
-### Other Resources  
+## Other Resources  
 [Towards Deployable RL - What’s Broken with RL Research and a Potential Fix](https://avivtamar.substack.com/p/deployablerl)  
 [CMU Real World RL course by Emma Brunskill](https://www.cs.cmu.edu/~ebrun/15889e/index.html)  
 MLJ Special Issue on Reinforcement Learning for Real Life   
