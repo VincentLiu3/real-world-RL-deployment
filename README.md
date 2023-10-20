@@ -9,8 +9,9 @@ The repository aggregates information from several sources, including
 - [Deep RL In The World](https://github.com/montrealrobotics/DeepRLInTheWorld)
 - [RL for real-world problems](https://mighty-melody-f4b.notion.site/RL-for-real-world-problems-0114c270e5d94894b3c4f227e24401db)
 - [Application of RL 2023](https://docs.google.com/presentation/d/1bJssDePYLuVHSHoBAPYaiIjXcLFB0hOsuR1-PXtEb-o/edit#slide=id.g1d05b5b4042_462_15)
+- [Awesome Real World RL](https://github.com/ugurkanates/awesome-real-world-rl#papers)
 
-We categorize RL applications based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown), and the approaches to solve the problems (e.g., online, offline, train with simulators, search with simulators, offline data with simulators).
+We categorize RL applications based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown), and the approaches to solve the problems (e.g., online, offline, train with simulators, search with simulators, using offline data to build partial simulators).
 
 ## Contents
 
@@ -84,17 +85,17 @@ Algorithm: offline model learning using LSTM + offline actor-critic with reward 
 [comment]: <> (Deployment status: unknown  )
 
 ## Control of Physical Systems
-**Google** uses RL to control a superpressure balloon in the stratosphere.  
+**Google** and **Loon** uses RL to control a superpressure balloon in the stratosphere.  
 Link: [Nature2020](https://www.nature.com/articles/s41586-020-2939-8)  
 Deployment status: Currently deployed  
-Approach: Train with simulators  
+Approach: Using offline data to build partial simulators (wind simulation based on historical data)  
 Difficulty: Partial observability  
 Algorithm: Incorporate uncertainty estimates as additional inputs, QR-DQN with a seven-layers Relu network + parallel simulation
 
 **Swift** achieved champion-level performance in drone racing.  
 Link: [Nature2023](https://www.nature.com/articles/s41586-023-06419-4)  
 Deployment status: Deployed at least once/for some time (won several races against human champions)  
-Approach: Train with simulators + fine-tune based on real-world data  
+Approach: Train with simulators + fine-tune by collecting more real-world data  
 Difficulty: Optimizing a policy purely in simulation yields poor performance on physical hardware  
 Algorithm: PPO + parallel simulation
 
@@ -103,7 +104,7 @@ Algorithm: PPO + parallel simulation
 ## LLM
 **OpenAI** uses Reinforcement Learning from Human Feedback (RLHF).   
 Link: [Introducing ChatGPT](https://openai.com/blog/chatgpt)   
-Deployment status: Currently deployed
+Deployment status: Currently deployed  
 Difficulty: Learning a reward model  
 Algorithm: PPO with learned reward model 
 
@@ -163,8 +164,14 @@ Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/
 [RLlib: Industry-Grade Reinforcement Learning](https://docs.ray.io/en/master/rllib/index.html)  
 [FinRL: Financial Reinforcement Learning](https://github.com/AI4Finance-Foundation/FinRL)
 
-## Other Resources  
-[Towards Deployable RL - What’s Broken with RL Research and a Potential Fix](https://avivtamar.substack.com/p/deployablerl)  
-[CMU Real World RL course by Emma Brunskill](https://www.cs.cmu.edu/~ebrun/15889e/index.html)  
+## Other Resources 
+#### Blog Posts
+[Towards Deployable RL - What’s Broken with RL Research and a Potential Fix](https://avivtamar.substack.com/p/deployablerl)  by Shie Mannor and Aviv Tamar  
+[Don’t Panic! Reinforcement learning is full of magical things patiently waiting for our wits to grow sharper](https://medium.com/@marlos.cholodovskis/dont-panic-b4e96aee1364) by Marlos C. Machado  
+
+#### Lectures
+[CMU Real World RL course](https://www.cs.cmu.edu/~ebrun/15889e/index.html)  by Emma Brunskill  
+
+#### Journal & Workshop
 MLJ Special Issue on Reinforcement Learning for Real Life   
 Reinforcement Learning for Real Life Workshop @ NeurIPS and ICML
