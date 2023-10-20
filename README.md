@@ -13,6 +13,16 @@ The repository aggregates information from several sources, including
 We categorize RL applications based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown)
 and the approaches to solve the problems (e.g., online, offline, train with simulators, search with simulators, offline data with simulators).
 
+## Contents
+
+- [Industrial Control](#industrial-control)
+- [Energy Control](#energy-control)
+- [Control of Physical Systems](#control-of-physical-systems)
+- [LLM](#llm)
+- [Other Applications without Deployment](#other-applications-without-deployment)
+- [Open Source Software](#open-source-software)
+- [Other Resources](#other-resources)
+
 ### Industrial Control
 
 **AMII** applies RL for water treatment plant.  
@@ -70,12 +80,8 @@ Deployment status: Currently deployed (deployed in four large coal-fired thermal
 Approach: Offline  
 Algorithm: offline model learning using LSTM + offline actor-critic with reward penalty
 
-[comment]: <> (Wave Energy Converters)
-
 [comment]: <> (**StackEase** applies deep RL algorithms to optimize Battery Energy Storage Systems &#40;BESS&#41;.  )
-
 [comment]: <> (Link: [Website]&#40;https://eolrobotics.fr/&#41;  )
-
 [comment]: <> (Deployment status: unknown  )
 
 ### Control of Physical Systems
@@ -143,6 +149,15 @@ Link: [Presentation](https://www.anyscale.com/blog/sailing-to-victory-with-reinf
 Matrix multiplication
 
 Video compression
+
+### Other Applications without Deployment
+Apple uses RL to learn a network defense policy  
+Link: [Paper](https://drive.google.com/file/d/1frDQBb3dlc12BbCzJRJ_H6swVdhAjWGT/view)
+
+Hewlett Packard Enterprise uses RL to control Wave Energy Converters
+
+Boeing uses RL to optimize the obstacle avoidance policy.  
+Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/view)
 
 ### Open Source Software
 [ReAgent: Applied Reinforcement Learning @ Facebook](https://github.com/facebookresearch/ReAgent)  
