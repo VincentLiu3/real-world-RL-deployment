@@ -25,29 +25,29 @@ We categorize RL applications based on the deployment status (e.g., currently de
 
 ## Industrial Control
 
-**AMII** applies RL for water treatment plant.  
+**AMII** has been applying RL for water treatment plant.  
 Link: [Blog Post](https://www.amii.ca/latest-from-amii/isl-adapt-uses-ml-make-water-treatment-cleaner-greener/)  
 Deployment status: Planned to be deployed
 
-**Google Deepmind** uses RL to improve the energy efficiency of heating, ventilation and air conditioning (HVAC) control.  
+**Google Deepmind** used RL to improve the energy efficiency of heating, ventilation and air conditioning (HVAC) control.  
 Link: [Paper2022](https://arxiv.org/abs/2211.07357), [NeurIPS2018](https://proceedings.neurips.cc/paper_files/paper/2018/file/059fdcd96baeb75112f09fa1dcc740cc-Paper.pdf)   
 Deployment status: Deployed at least once/for some time. Experiments were done in real world facilities.    
 Approach: Online  
 Algorithm: Policy iteration, with value function estimated from offline data
 
-**Telus** uses RL to reduce energy consumption for data centers.   
+**Telus** used RL to reduce energy consumption for data centers.   
 Link: [Presentation](https://www.caiac.ca/sites/default/files/shared/canai-2021-presentations/slides-138.pdf), [Announcement](https://www.telus.com/en/about/news-and-events/media-releases/using-ai-for-good-telus-and-vector-institute-partner-to-reduce-climate-impacts-from-data-centres)  
 Deployment status: Unknown   
 Approach: Train with simulators
 
-**Foobot** uses deep RL for HVAC optimization.   
+**Foobot** used deep RL for HVAC optimization.   
 Link: [Blog](https://techblog.foobot.io/)  
 Deployment status: Currently deployed (based on the information [here](https://github.com/montrealrobotics/DeepRLInTheWorld))  
 Approach: Train with simulators   
 Difficulty: High dimensional action spaces  
 Algorithm: PPO with autoregressive policies
 
-**NVIDIA** uses RL for data center congestion control.   
+**NVIDIA** used RL for data center congestion control.   
 Link: [Paper2023](https://arxiv.org/pdf/2207.02295.pdf)  
 Deployment status: Experiments were done in real world system.   
 Approach: Train with simulators  
@@ -58,11 +58,11 @@ Algorithm: Policy gradient with LSTM layers -> distill to lightweight decision t
 Link: [Video](https://www.anyscale.com/events/2022/03/29/reinforcement-learning-in-the-physical-world)  
 Deployment status: unknown
 
-**Phaidra** uses deep RL to improve plant stability and energy efficiency.  
+**Phaidra** has been working on using deep RL to improve plant stability and energy efficiency.  
 Link: [Website](https://www.phaidra.ai/), [Technical Report](https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/42542.pdf)   
 Deployment status: unknown  
 
-**Microsoft Project Bonsai** uses RL for industrial control systems  
+**Microsoft Project Bonsai** used RL for industrial control systems  
 Link: [Website](https://www.microsoft.com/en-us/ai/autonomous-systems-project-bonsai?activetab=pivot:primaryr7), [Report](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4Gk6P)  
 Deployment status: unknown  
 Approach: Train with simulators
@@ -85,7 +85,7 @@ Algorithm: offline model learning using LSTM + offline actor-critic with reward 
 [comment]: <> (Deployment status: unknown  )
 
 ## Control of Physical Systems
-**Google** and **Loon** uses RL to control a superpressure balloon in the stratosphere.  
+**Google** and **Loon** used RL to control a superpressure balloon in the stratosphere.  
 Link: [Nature2020](https://www.nature.com/articles/s41586-020-2939-8)  
 Deployment status: Currently deployed  
 Approach: Using offline data to build partial simulators (wind simulation based on historical data)  
@@ -101,12 +101,32 @@ Algorithm: PPO + parallel simulation
 
 [comment]: <> (Nuro)
 
-## LLM
-**OpenAI** uses Reinforcement Learning from Human Feedback (RLHF).   
-Link: [Introducing ChatGPT](https://openai.com/blog/chatgpt)   
+## Large Language Models/Conversational Systems
+**OpenAI** used Reinforcement Learning from Human Feedback (RLHF) for ChatGPT.   
+Link: [Introducing ChatGPT](https://openai.com/blog/chatgpt), [NeurIPS 2020](https://arxiv.org/pdf/2009.01325.pdf)  
 Deployment status: Currently deployed  
-Difficulty: Learning a reward model  
-Algorithm: PPO with learned reward model 
+Algorithm: PPO with learned reward models, penalizes the KL divergence between the RL policy and the original supervised model
+
+**Deepmind** used RLHF for Sparrow.  
+Link: [Sparrow](https://arxiv.org/abs/2209.14375), [Blog](https://www.deepmind.com/blog/building-safer-dialogue-agents)   
+Deployment status: Unknown (the model was not released publicly)  
+Algorithm: A2C with learned reward models, penalizes the KL divergence between the fine-tuned policy and the initial teacher language model
+
+**Anthropic** used Reinforcement Learning from AI Feedback for Claude.   
+Link: [Constitutional AI](https://arxiv.org/abs/2212.08073), [Iterated Online RLHF](https://arxiv.org/abs/2204.05862)  
+Deployment status: Currently deployed  
+Algorithm: Preference labelling are done by an independent model (feedback model), instead of human. The remainder of the training pipeline is exactly the same as RLHF with PPO.
+
+**Meta** used RLHF for Llama 2.   
+Link: [Llama 2](https://arxiv.org/abs/2307.09288)  
+Deployment status: Currently deployed  
+Algorithm: PPO with rejection sampling fine-tuning
+
+**Google** developed a real-time and open-ended dialogue system using RL.  
+Link: [Paper](https://arxiv.org/abs/2208.02294)  
+Deployment status: Currently deployed in Google Assistant  
+Approach: Offline
+Algorithm: Stochastic Action Q-learning & Continuous Action Q-learning & Conservative Q-learning
 
 ## Recommendation
 Yahoo (online bandits)
@@ -151,18 +171,20 @@ Matrix multiplication
 Video compression
 
 ## Other Applications without Deployment
-Apple uses RL to learn a network defense policy  
+Apple used RL to learn a network defense policy  
 Link: [Paper](https://drive.google.com/file/d/1frDQBb3dlc12BbCzJRJ_H6swVdhAjWGT/view)
 
-Hewlett Packard Enterprise uses RL to control Wave Energy Converters
+Hewlett Packard Enterprise used RL to control Wave Energy Converters
 
-Boeing uses RL to optimize the obstacle avoidance policy.  
+Boeing used RL to optimize the obstacle avoidance policy.  
 Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/view)
 
 ## Open Source Software
-[ReAgent: Applied Reinforcement Learning @ Facebook](https://github.com/facebookresearch/ReAgent)  
+[ReAgent: Applied Reinforcement Learning](https://github.com/facebookresearch/ReAgent) from Facebook  
 [RLlib: Industry-Grade Reinforcement Learning](https://docs.ray.io/en/master/rllib/index.html)  
-[FinRL: Financial Reinforcement Learning](https://github.com/AI4Finance-Foundation/FinRL)
+[FinRL: Financial Reinforcement Learning](https://github.com/AI4Finance-Foundation/FinRL)  
+[TRL: Transformer Reinforcement Learning](https://github.com/huggingface/trl) from Hugging Face  
+[RL4LMs: A modular RL library to fine-tune language models to human preferences](https://github.com/allenai/RL4LMs) from AI2
 
 ## Other Resources 
 #### Blog Posts
