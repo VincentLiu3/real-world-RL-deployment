@@ -5,7 +5,7 @@ The repository compiles a list of real-world applications of reinforcement learn
 - Exclude RL applications to games and robotics where experiments were only done in simulation. 
 - Only include publicly available information. 
 
-The repository aggregates information from several sources, including
+The repository also aggregates information from several sources, including
 - [Deep RL In The World](https://github.com/montrealrobotics/DeepRLInTheWorld)
 - [RL for real-world problems](https://mighty-melody-f4b.notion.site/RL-for-real-world-problems-0114c270e5d94894b3c4f227e24401db)
 - [Application of RL 2023](https://docs.google.com/presentation/d/1bJssDePYLuVHSHoBAPYaiIjXcLFB0hOsuR1-PXtEb-o/edit#slide=id.g1d05b5b4042_462_15)
@@ -14,11 +14,10 @@ The repository aggregates information from several sources, including
 We categorize RL applications based on the deployment status (e.g., currently deployed, deployed at least once/for some time, planned to be deployed, or unknown), and the approaches to solve the problems (e.g., online, offline, train with simulators, search with simulators, using offline data to build partial simulators).
 
 ## Contents
-
 - [Industrial Control](#industrial-control)
 - [Energy Control](#energy-control)
 - [Control of Physical Systems](#control-of-physical-systems)
-- [LLM](#llm)
+- [Large Language Models & Conversational Systems](#large-language-models-conversational-systems)
 - [Other Applications without Deployment](#other-applications-without-deployment)
 - [Open Source Software](#open-source-software)
 - [Other Resources](#other-resources)
@@ -101,7 +100,7 @@ Algorithm: PPO + parallel simulation
 
 [comment]: <> (Nuro)
 
-## Large Language Models/Conversational Systems
+## Large Language Models & Conversational Systems
 **OpenAI** used Reinforcement Learning from Human Feedback (RLHF) for ChatGPT.   
 Link: [Introducing ChatGPT](https://openai.com/blog/chatgpt), [NeurIPS 2020](https://arxiv.org/pdf/2009.01325.pdf)  
 Deployment status: Currently deployed  
