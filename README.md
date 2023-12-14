@@ -1,4 +1,4 @@
-# Real World RL in Deployment
+# Real World Reinforcement Learning in Deployment
 
 The repository compiles a list of real-world applications of reinforcement learning.
 - Only include methods that was deployed, is currently deployed, or will be deployed in the future. 
@@ -17,8 +17,9 @@ We categorize RL applications based on the deployment status (e.g., currently de
 - [Industrial Control](#industrial-control)
 - [Energy Control](#energy-control)
 - [Control of Physical Systems](#control-of-physical-systems)
-- [Large Language Models & Conversational Systems](#large-language-models-conversational-systems)
+- [Large Language Models & Conversational Systems](#large-language-models--conversational-systems)
 - [Other Applications without Deployment](#other-applications-without-deployment)
+- [Real world gym](#real-world-gym)
 - [Open Source Software](#open-source-software)
 - [Other Resources](#other-resources)
 
@@ -124,7 +125,7 @@ Algorithm: PPO with rejection sampling fine-tuning
 **Google** developed a real-time and open-ended dialogue system using RL.  
 Link: [Paper](https://arxiv.org/abs/2208.02294)  
 Deployment status: Currently deployed in Google Assistant  
-Approach: Offline
+Approach: Offline  
 Algorithm: Stochastic Action Q-learning & Continuous Action Q-learning & Conservative Q-learning
 
 ## Recommendation
@@ -140,7 +141,9 @@ Google Maps
 
 Ridesharing 
 
-## Finance/Accounting
+## Finance
+
+## Accounting
 IRS uses bandits for audit selection  
 Link: [Paper](https://realworldml.github.io/files/cr/paper68.pdf) 
 
@@ -178,12 +181,17 @@ Hewlett Packard Enterprise used RL to control Wave Energy Converters
 Boeing used RL to optimize the obstacle avoidance policy.  
 Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/view)
 
+## Real World Gym
+[SustainGym: Reinforcement Learning Environments for Sustainable Energy Systems](https://openreview.net/pdf?id=vZ9tA3o3hr)  
+[CybORG: A Gym for the Development of Autonomous Cyber Agents](https://arxiv.org/pdf/2108.09118.pdf)
+
 ## Open Source Software
-[ReAgent: Applied Reinforcement Learning](https://github.com/facebookresearch/ReAgent) from Facebook  
+[Pearl - A Production-ready Reinforcement Learning AI Agent Library](https://github.com/facebookresearch/Pearl) from Meta  
 [RLlib: Industry-Grade Reinforcement Learning](https://docs.ray.io/en/master/rllib/index.html)  
 [FinRL: Financial Reinforcement Learning](https://github.com/AI4Finance-Foundation/FinRL)  
 [TRL: Transformer Reinforcement Learning](https://github.com/huggingface/trl) from Hugging Face  
 [RL4LMs: A modular RL library to fine-tune language models to human preferences](https://github.com/allenai/RL4LMs) from AI2
+
 
 ## Other Resources 
 #### Blog Posts
