@@ -184,6 +184,7 @@ Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/
 ## Real World Gym
 [SustainGym: Reinforcement Learning Environments for Sustainable Energy Systems](https://openreview.net/pdf?id=vZ9tA3o3hr)  
 [CybORG: A Gym for the Development of Autonomous Cyber Agents](https://arxiv.org/pdf/2108.09118.pdf)
+[DCRL-Green: Sustainable Data Center Environment and Benchmark for Multi-Agent Reinforcement Learning](https://github.com/HewlettPackard/dc-rl?tab=readme-ov-file)
 
 ## Open Source Software
 [Pearl - A Production-ready Reinforcement Learning AI Agent Library](https://github.com/facebookresearch/Pearl) from Meta  
@@ -191,7 +192,6 @@ Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/
 [FinRL: Financial Reinforcement Learning](https://github.com/AI4Finance-Foundation/FinRL)  
 [TRL: Transformer Reinforcement Learning](https://github.com/huggingface/trl) from Hugging Face  
 [RL4LMs: A modular RL library to fine-tune language models to human preferences](https://github.com/allenai/RL4LMs) from AI2
-
 
 ## Other Resources 
 #### Blog Posts
