@@ -183,7 +183,7 @@ Link: [Paper](https://drive.google.com/file/d/1IBGLKZW7AZHC1k6Q2NLlQvEezdLIcQKm/
 
 ## Real World Gym
 [SustainGym: Reinforcement Learning Environments for Sustainable Energy Systems](https://openreview.net/pdf?id=vZ9tA3o3hr)  
-[CybORG: A Gym for the Development of Autonomous Cyber Agents](https://arxiv.org/pdf/2108.09118.pdf)
+[CybORG: A Gym for the Development of Autonomous Cyber Agents](https://arxiv.org/pdf/2108.09118.pdf)  
 [DCRL-Green: Sustainable Data Center Environment and Benchmark for Multi-Agent Reinforcement Learning](https://github.com/HewlettPackard/dc-rl?tab=readme-ov-file)
 
 ## Open Source Software
